@@ -1,3 +1,18 @@
+# Random Forest from Scratch
+
+Random Forest implemented in NumPy — bagging, feature randomness, and majority-vote aggregation over custom decision trees — trained on the UCI Wine Quality dataset.
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+python Random-Forest.py
+```
+
+The dataset is downloaded automatically at runtime via `ucimlrepo`, so no manual data setup is needed.
+
+---
+
 1. Objectives:
 -------------------
 The goal is to implement the random forest algorithm from scratch in python with Wine Quality Dataset. It shows how ensemble learning improving predictive performance and reduce the overfitting issue by combining N number of Decision Tree through bagging and feature randomness.

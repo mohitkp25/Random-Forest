@@ -74,30 +74,33 @@ Accuracy vs. Number of Trees
 The model was trained with different numbers of trees: [1, 5, 10, 25, 50, 100].
 
 The following trend was observed:
-N_Trees	Test Accuracy
-1	0.7207692307692307
-5	0.7676923076923077
-10	0.7807692307692308
-25	0.7992307692307692
-50	0.7938461538461539
-100	0.7961538461538461
+| Trees | Test accuracy |
+|---:|---:|
+| 1 | 0.720769 |
+| 5 | 0.767692 |
+| 10 | 0.780769 |
+| 25 | 0.799231 |
+| 50 | 0.793846 |
+| 100 | 0.796154 |
 
 Interpretation:
  The  accuracy and stability  is directly proportional to the number of trees. The stability increases with the increase in number of trees and get stabilized around 50 to 100 trees. This concluded the law of diminishing returns which states that after a certain threshold the gain is not proportionate to the extra added trees.
 Feature Importance Analysis
-•	Feature importance was calculated by averaging Gini impurity reduction across all trees.
-•	Top influential features for predicting wine quality were found to be:
-  1.	Alcohol
-  2.	Volatile Acidity
-  3.	Sulphates
-  4.	Citric Acid
-  5.	Total Sulfur Dioxide
+- Feature importance was calculated by averaging Gini impurity reduction across all trees.
+- Top influential features for predicting wine quality were found to be:
+  1. Alcohol
+  2. Volatile Acidity
+  3. Sulphates
+  4. Citric Acid
+  5. Total Sulfur Dioxide
 
 
-                === Performance Comparison ===
-                           Accuracy   Precision    Recall       F1-Score
-Random Forest   0.798462   0.812709   0.885784    0.847674
-Decision Tree     0.766923   0.814010    0.818955     0.816475
+### Performance comparison
+
+| Model | Accuracy | Precision | Recall | F1-score |
+|---|---:|---:|---:|---:|
+| Random Forest | 0.798462 | 0.812709 | 0.885784 | 0.847674 |
+| Decision Tree | 0.766923 | 0.814010 | 0.818955 | 0.816475 |
 
  
 
